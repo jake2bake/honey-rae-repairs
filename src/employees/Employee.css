@@ -1,16 +1,4 @@
-.employees {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 3rem;
-  }
-
-  .employees > * {
-    flex-basis: 31%;
-    margin: 0.5rem;
-  }
-  .employee {
+.employee {
     background-color: var(--white);
     border: 1px solid var(--outline);
     border-radius: 0.5rem;
