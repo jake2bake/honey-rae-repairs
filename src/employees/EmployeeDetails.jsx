@@ -6,7 +6,6 @@ import "./Employee.css"
 
 export const EmployeeDetails = () => {
     const [employee, setEmployee] = useState({});
-    
     const { employeeId } = useParams();
 
     useEffect(() => {
@@ -15,8 +14,6 @@ export const EmployeeDetails = () => {
             setEmployee(employeeObj);
         });
     }, [employeeId]);
-
-  
 
     return (
         <section className="employee">
@@ -34,9 +31,8 @@ export const EmployeeDetails = () => {
                 ${employee.rate}
             </div>
             <div>
-               <span className="employee-info">Currently working on this amount of tickets: </span>
-               {employee.employeeTickets? employee.employeeTickets.length : 0}
-                
+                <span className="employee-info">Currently working on this amount of tickets: </span>
+                {employee.employeeTickets ? employee.employeeTickets.length : 0}
             </div>
         </section>
     );
