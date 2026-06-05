@@ -1,11 +1,11 @@
 export const getUserByEmail = (email) => {
-  return fetch(`http://localhost:8088/users?email=${email}`).then((res) =>
+  return fetch(`http://localhost:8000/users?email=${email}`).then((res) =>
     res.json()
   )
 }
 
 export const createUser = (customer) => {
-  return fetch("http://localhost:8088/users", {
+  return fetch("http://localhost:8000/users", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
