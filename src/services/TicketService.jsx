@@ -1,10 +1,10 @@
 export const getAllTickets = () => {
-    return fetch("http://localhost:8088/serviceTickets?_embed=employeeTickets").then((res) => res.json())
+    return fetch("http://localhost:8000/serviceTickets?_embed=employeeTickets").then((res) => res.json())
 }
 
 
 export const assignTicket = (employeeTicket) => {
-    return fetch(`http://localhost:8088/employeeTickets`, {
+    return fetch(`http://localhost:8000/employeeTickets`, {
     method: "POST",
     headers: {
         "Content-Type": "application/json",
@@ -15,7 +15,7 @@ export const assignTicket = (employeeTicket) => {
 }
 
 export const updateTicket = (ticket) => {
-    return fetch(`http://localhost:8088/serviceTickets/${ticket.id}`, {
+    return fetch(`http://localhost:8000/serviceTickets/${ticket.id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
@@ -25,11 +25,11 @@ export const updateTicket = (ticket) => {
 }
  
 export const deleteTicket = (ticketId) => {
-    return fetch(`http://localhost:8088/serviceTickets/${ticketId}`, {method:"DELETE"})
+    return fetch(`http://localhost:8000/serviceTickets/${ticketId}`, {method:"DELETE"})
 }
 
 export const createTicket = (ticket) => {
-    return fetch(`http://localhost:8088/serviceTickets`, {
+    return fetch(`http://localhost:8000/serviceTickets`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
