@@ -4,7 +4,7 @@ import { createTicket } from "../../services/TicketService"
 import { useNavigate } from "react-router-dom"
 
 export const TicketForm = ({currentUser}) => {
-    const [ticket, setTicket] = useState({ descripton: "", emergency: false })
+    const [ticket, setTicket] = useState({ description: "", emergency: false })
 
     const navigate = useNavigate()
 
