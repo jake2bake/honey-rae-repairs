@@ -10,6 +10,8 @@ import { useEffect, useState } from "react"
 import { EmployeeForm } from "../components/forms/EmployeeForm"
 import { EmployeeViews } from "./EmployeeViews"
 import { CustomerViews } from "./CustomerViews"
+import { CustomerNav } from "../components/nav/CustomerNav"
+
 
 export const ApplicationViews = () => {
   const [currentUser, setCurrentUser] = useState({})
