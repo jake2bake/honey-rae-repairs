@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom"
 import { CustomerList } from "./CustomersList"
 import { useEffect, useState } from "react"
 import { getCustomerByUserId } from "../../../services/customerService"
+import { CustomerNav } from "../../nav/CustomerNav"
 
 export const CustomerDetails = () => {
     const [customer, setCustomer] = useState({})
